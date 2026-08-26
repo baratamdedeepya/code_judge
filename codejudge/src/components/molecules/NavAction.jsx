@@ -5,7 +5,7 @@ const NavAction = () => {
   return (
     <div className="nav-actions">
       <Button variant="secondary">Login</Button>
-      {/* <Button variant="primary">Sign up</Button> */}
+      <Button variant="primary">Sign up</Button>
     </div>
   );
 };
