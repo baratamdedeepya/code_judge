@@ -1,0 +1,31 @@
+.btn {
+    padding: 10px 22px;
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-primary {
+    background: #800e13;
+    color: white;
+    border: 2px solid #800e13;
+}
+
+.btn-primary:hover {
+    background:transparent;
+    color: #800e13;
+   
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #800e13;
+    border: 2px solid #800e13;
+}
+
+.btn-secondary:hover {
+    background: #800e13;
+    color: white;
+}

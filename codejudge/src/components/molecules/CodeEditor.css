@@ -1,0 +1,138 @@
+.codeeditor
+{
+    overflow: hidden;
+    width:700px;
+    height: 500px;
+    background-color: #101112;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+.codeeditor-head
+{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-bottom:1px solid #2d2d2d ;
+}
+.languages
+{
+    display: flex;
+    gap: 15px;
+}
+.languages button
+{
+    
+    color: #ccc;
+    padding: 10px 16px;
+   
+    cursor: pointer;
+
+}
+
+/* .languages button:hover
+{
+    color: #800e13;
+} */
+.codeeditor-body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: 380px;
+}
+.code-area {
+    padding: 18px 15px;
+    border-right: 1px solid #2d2d2d;
+    overflow: hidden;
+}
+.line {
+    display: flex;
+    gap: 20px;
+    font-family: 'Fira Code', monospace;
+    font-size: 14px;
+    line-height: 28px;
+}
+.line span {
+    width: 20px;
+    color: #666;
+    text-align: right;
+}
+.line code {
+    color: #e6e6e6;
+}
+.io-area {
+    background: #151619;
+}
+.io-names
+{
+    display: flex;
+    gap: 25px;
+    padding: 18px;
+    border-bottom: 1px solid #2d2d2d;
+}
+.io-names span
+{
+    position: relative;
+    color: #999;
+    cursor: pointer;
+}
+.io-names .active::after {
+    content: "";
+    position: absolute;
+
+    left: 50%;
+    bottom: -5%;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: #800e13;
+
+    transform: translateX(-50%) scaleX(1);
+    transform-origin: center;
+}
+.codeeditor-footer {
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 14px;
+    padding: 0 20px;
+    border-top: 1px solid #2d2d2d;
+}
+
+.codeeditor-footer button {
+    padding: 10px 24px;
+    border-radius: 7px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.reset {
+    background: transparent;
+    border: 1px solid #555;
+    color: white;
+}
+
+.run {
+    background: #292c32;
+    border: none;
+    color: white;
+}
+
+.submit {
+    background: #800e13;
+    border: none;
+    color: white;
+}
+.codeeditor-footer button{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.run svg,
+.submit svg {
+    font-size: 14px;
+}

@@ -1,0 +1,36 @@
+.theme-toggle {
+    width: 58px;
+    height: 32px;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #800e13;
+    border-radius: 50px;
+    background: #fff5f5;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.toggle-circle {
+    width: 26px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #800e13;
+    color: white;
+    font-size: 16px; 
+    transition: all 0.3s ease;
+}
+
+
+
+.theme-toggle.dark {
+    background: #fff5f5;
+}
+
+.theme-toggle.dark .toggle-circle {
+    transform: translateX(26px);
+    background: #800e13;
+}
