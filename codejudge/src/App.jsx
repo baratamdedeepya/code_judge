@@ -1,23 +1,63 @@
-import { useState } from "react";
+import React, { useState } from "react";
+
 import Navbar from "./components/organisms/Navbar";
-import "./App.css";
 import Landing from "./components/organisms/Landing";
 
+import ProblemPage from "./Pages/ProblemPage";
+import ContestsPage from "./Pages/ContestsPage";
+
+import "./App.css";
+
 function App() {
-    const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
 
-    return (
-        <div className={darkMode ? "app dark" : "app"}>
+  return (
+    <div
+      className={`
+        min-h-screen
+        transition-colors
+        duration-300
 
-            <Navbar
-                darkMode={darkMode}
-                setDarkMode={setDarkMode}
-            />
+        ${
+          darkMode
+            ? "bg-[#111111] text-white"
+            : "bg-white text-black"
+        }
+      `}
+    >
 
-            <Landing />
+      
+      <Navbar
+        darkMode={darkMode}
+        setDarkMode={setDarkMode}
+      />
 
-        </div>
-    );
+
+      
+
+      <main>
+
+        <section id="home">
+          <Landing darkMode={darkMode} />
+        </section>
+
+
+        
+        <ProblemPage
+          darkMode={darkMode}
+        />
+
+
+       
+
+        <ContestsPage
+          darkMode={darkMode}
+        />
+
+      </main>
+
+    </div>
+  );
 }
 
 export default App;
