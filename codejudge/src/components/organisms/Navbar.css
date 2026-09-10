@@ -1,21 +1,20 @@
-.navbar {
-  
-
-    
-
+ .navbar {
     display: flex;
     align-items: center;
     justify-content: space-around;
 
     padding: 16px 28px;
 
-    background: #ffffff;
+    background: var(--navbar-bg);
+    color: var(--text-color);
 
-    /* border-bottom: 2px solid #800e13; */
-
-    box-shadow: 0 4px 15px rgba(128, 14, 19, 0.12);
+    box-shadow: 0 4px 15px var(--shadow-color);
 
     position: sticky;
     top: 0;
     z-index: 1000;
+
+    transition: background-color 0.3s ease,
+                color 0.3s ease,
+                box-shadow 0.3s ease; 
 }

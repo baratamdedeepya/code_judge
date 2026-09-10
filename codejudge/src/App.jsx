@@ -2,7 +2,7 @@ import { useState } from "react";
 import Navbar from "./components/organisms/Navbar";
 import "./App.css";
 import Landing from "./components/organisms/Landing";
-
+import WhyChooseUs from "./components/organisms/WhyChooseUs";
 function App() {
     const [darkMode, setDarkMode] = useState(false);
 
@@ -15,7 +15,7 @@ function App() {
             />
 
             <Landing />
-
+            <WhyChooseUs />
         </div>
     );
 }

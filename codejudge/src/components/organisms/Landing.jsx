@@ -7,7 +7,7 @@ import { GiTargetPrize } from "react-icons/gi";
 const Landing=() =>
 {
     return(
-        <div className="main">
+        <div className="main ">
             <div className="left">
                 <h1>Code.Compile.</h1>
                 <h1>Conquer.</h1>

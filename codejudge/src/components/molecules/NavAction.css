@@ -1,6 +1,5 @@
-.nav-actions
-{
+ .nav-actions {
     display: flex;
-    color: black;
+    color: var(--text-color);
     gap: 20px;
 }

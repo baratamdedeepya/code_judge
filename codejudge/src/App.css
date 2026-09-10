@@ -1,11 +1,86 @@
-.app {
-    background-color: #fff5f5;
-    color: #2b0a0a;
-    min-height: 100vh;
-    transition: 0.3s ease;
+:root {
+    /* Page */
+    --page-bg: linear-gradient(
+        135deg,
+        #ffffff 0%,
+        #fcf5f5 35%,
+        #f7e8e9 70%,
+        #edd0d2 100%
+    );
+
+    /* Common */
+    --text-color: #171717;
+    --primary-color: #5c0f13;
+    --accent-color: #a41319;
+    --accent-bg: #f7e8e9;
+
+    /* Logo */
+    --logo-code-color: #171717;
+
+    /* Navbar */
+    --navbar-bg: #ffffff;
+    --shadow-color: rgba(128, 14, 19, 0.12);
+
+    /* Buttons */
+    --button-text-color: #ffffff;
+
+    /* Toggle */
+    --toggle-bg: #fff5f5;
+    --toggle-icon-color: #ffffff;
+
+    /* Code Editor */
+    --editor-bg: #101112;
+    --editor-text: #ffffff;
+    --editor-border: #2d2d2d;
+    --editor-muted: #999999;
+    --line-number-color: #666666;
+    --code-color: #e6e6e6;
+    --io-bg: #151619;
+    --reset-border: #555555;
+    --run-bg: #292c32;
+    /*featurecard*/
+    --card-bg:#ead0d2;
+
+    --card-icon-bg: #f7e8e9;
+
+    --muted-text: #666666;
 }
 
+/* Main Application */
+.app {
+    min-height: 100vh;
+    background: var(--page-bg);
+    color: var(--text-color);
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Theme */
 .app.dark {
-    background-color: #120606;
-    color: white;
+    --page-bg: linear-gradient(
+        135deg,
+        #080808 0%,
+        #120b0c 45%,
+        #1f0d10 75%,
+        #2b1115 100%
+    );
+
+    --text-color: #ffffff;
+    --primary-color: #a52c36;
+    --accent-color: #c44750;
+    --accent-bg: #241114;
+
+    --logo-code-color: #ffffff;
+
+    --navbar-bg: #0d0b0b;
+    --shadow-color: rgba(0, 0, 0, 0.45);
+
+    --button-text-color: #ffffff;
+
+    --toggle-bg: #211012;
+    --toggle-icon-color: #ffffff;
+    --card-bg: rgba(54, 27, 31, 0.75);
+  
+    --card-icon-bg: #32171a;
+
+    --muted-text: #c2b8b9;
 }
