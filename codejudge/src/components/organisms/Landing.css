@@ -1,6 +1,13 @@
  .main {
+.main {
+    width: 92%;
+    max-width: 1500px;
+
+    min-height: calc(100vh - 82px);
+
+    margin: 0 auto;
+
     display: flex;
-    justify-content: center;
     align-items: center;
 
     gap: 7%;
@@ -18,7 +25,52 @@ body {
     font-size: 3.5rem;
     font-weight: 600;
     color: var(--text-color);
+
+    
+    padding-left: 45px;
+
+    gap: 55px;
+
+    box-sizing: border-box;
+
+    transition: all 0.3s ease;
 }
+
+
+
+
+.left {
+    flex: 0 0 46%;
+
+    max-width: 650px;
+
+    padding-left: 15px;
+}
+
+
+
+
+.main h1 {
+    margin: 0;
+
+    font-size: 3.6rem;
+
+    line-height: 1.25;
+
+    font-weight: 700;
+
+    color: #111111;
+
+    transition: color 0.3s ease;
+}
+
+
+.main h1:nth-child(2) {
+    color: #a41319;
+}
+
+
+
 
 .main p {
     margin: 10px auto;
@@ -29,29 +81,86 @@ body {
 }
 
 .btnn {
+.main p {
+    margin: 10px 0;
+
+    font-size: 18px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    letter-spacing: 1.5px;
+
+    line-height: 1.6;
+
+    color: #333333;
+
+    transition: color 0.3s ease;
+}
+
+
+
+
+.btnn {
     display: flex;
-    margin-top: 6%;
-    gap: 5%;
+
+    align-items: center;
+
+    gap: 18px;
+
+    margin-top: 32px;
 }
 
 .content {
+
+
+
+
+.content {
     display: flex;
-    justify-content: center;
+
     align-items: center;
 
     margin-top: 8%;
     gap: 5%;
+
+    justify-content: flex-start;
+
+    gap: 28px;
+
+    margin-top: 42px;
+
+    width: 100%;
 }
 
 .card {
+
+
+.card {
     display: flex;
-    gap: 6%;
+
+    align-items: center;
+
+    gap: 10px;
+
+    flex-shrink: 0;
 }
 
 .cleft {
+
+
+
+
+.cleft {
     display: flex;
+
     justify-content: center;
     align-items: center;
+
+
+    width: 65px;
+    height: 60px;
+
+    flex-shrink: 0;
 
     font-size: 2rem;
     color: var(--accent-color);
@@ -59,9 +168,18 @@ body {
     height: 60px;
     width: 70px;
 
+
+    color: #a41319;
+
     border-radius: 8px;
 
     background-color: var(--accent-bg);
+
+    background-color: #f7e8e9;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
 }
 
 .cright h2 {

@@ -1,18 +1,31 @@
-import { useState } from "react";
+import React, { useState } from "react";
+
 import Navbar from "./components/organisms/Navbar";
-import "./App.css";
 import Landing from "./components/organisms/Landing";
 import WhyChooseUs from "./components/organisms/WhyChooseUs";
 function App() {
-    const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
 
-    return (
-        <div className={darkMode ? "app dark" : "app"}>
+  return (
+    <div
+      className={`
+        min-h-screen
+        transition-colors
+        duration-300
 
-            <Navbar
-                darkMode={darkMode}
-                setDarkMode={setDarkMode}
-            />
+        ${
+          darkMode
+            ? "bg-[#111111] text-white"
+            : "bg-white text-black"
+        }
+      `}
+    >
+
+      
+      <Navbar
+        darkMode={darkMode}
+        setDarkMode={setDarkMode}
+      />
 
             <Landing />
             <WhyChooseUs />

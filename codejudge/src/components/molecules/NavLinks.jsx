@@ -1,13 +1,37 @@
-import React from 'react';
-import './NavLinks.css';
-import Button from '../atoms/Button';
-import NavLink from '../atoms/NavLink';
+import React from "react";
+
 const NavLinks = () => {
-    return (
-       <div className="navlinks ">
-      <span><NavLink>Problem</NavLink></span>
-       <span><NavLink>Contest</NavLink></span>
-       </div>
-    )
-}
+  return (
+    <nav className="flex items-center gap-10">
+
+      
+      <a
+        href="#home"
+        className="nav-link"
+      >
+        Home
+      </a>
+
+
+      
+      <a
+        href="#problems"
+        className="nav-link"
+      >
+        Problems
+      </a>
+
+
+      
+      <a
+        href="#contests"
+        className="nav-link"
+      >
+        Contests
+      </a>
+
+    </nav>
+  );
+};
+
 export default NavLinks;

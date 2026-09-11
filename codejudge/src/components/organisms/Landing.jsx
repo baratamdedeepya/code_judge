@@ -1,6 +1,6 @@
-import './Landing.css';
-import CodeEditor from '../molecules/CodeEditor';
-import Button from '../atoms/Button';
+import "./Landing.css";
+import CodeEditor from "../molecules/CodeEditor";
+import Button from "../atoms/Button";
 import { IoPeopleSharp } from "react-icons/io5";
 import { FaCode } from "react-icons/fa";
 import { GiTargetPrize } from "react-icons/gi";
