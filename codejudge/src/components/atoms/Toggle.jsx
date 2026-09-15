@@ -13,5 +13,5 @@ const Toggle = ({ darkMode, setDarkMode }) => {
         </button>
     );
 };
-
+ 
 export default Toggle;

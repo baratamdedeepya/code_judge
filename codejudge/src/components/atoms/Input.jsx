@@ -10,4 +10,4 @@ const Input = ({ placeholder, value, onChange }) => {
   );
 };
 
-export default Input;
+export default Input; 

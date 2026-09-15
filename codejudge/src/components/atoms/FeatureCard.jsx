@@ -14,6 +14,6 @@ function FeatureCard({ icon, title, description }) {
             </p>
         </div>
     );
-}
+} 
 
 export default FeatureCard;
