@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+
+
 import Navbar from "./components/organisms/Navbar";
 import Landing from "./components/organisms/Landing";
 
@@ -25,6 +27,7 @@ function App() {
         }
       `}
     >
+      
 
       
       <Navbar
