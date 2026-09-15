@@ -4,12 +4,7 @@ import React, { useState } from "react";
 
 import Navbar from "./components/organisms/Navbar";
 import Landing from "./components/organisms/Landing";
-
-import ProblemPage from "./Pages/ProblemPage";
-import ContestsPage from "./Pages/ContestsPage";
-
-import "./App.css";
-
+import WhyChooseUs from "./components/organisms/WhyChooseUs";
 function App() {
   const [darkMode, setDarkMode] = useState(false);
 
@@ -35,32 +30,10 @@ function App() {
         setDarkMode={setDarkMode}
       />
 
-
-      
-
-      <main>
-
-        <section id="home">
-          <Landing darkMode={darkMode} />
-        </section>
-
-
-        
-        <ProblemPage
-          darkMode={darkMode}
-        />
-
-
-       
-
-        <ContestsPage
-          darkMode={darkMode}
-        />
-
-      </main>
-
-    </div>
-  );
+            <Landing />
+            <WhyChooseUs />
+        </div>
+    );
 }
 
 export default App;

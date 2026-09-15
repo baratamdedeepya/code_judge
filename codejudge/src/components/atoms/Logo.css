@@ -1,12 +1,12 @@
-.code
-{
-    color: #171717;
+
+.code {
+    color: var(--logo-code-color);
     font-weight: 500;
     font-size: 24px;
 }
-.judge
-{
-    color: #800e13;
-    font-size:24px;
+
+.judge {
+    color: var(--primary-color);
+    font-size: 24px;
     font-weight: 500;
 }
