@@ -29,7 +29,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           w-full
           max-w-[1200px]
           items-center
-          px-[30px]
+          px-[30px] 
         "
       >
 
