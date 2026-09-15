@@ -13,7 +13,7 @@ const Badge = ({ children, type }) => {
       }`}
     >
       {children}
-    </span> 
+    </span>
   );
 };
 

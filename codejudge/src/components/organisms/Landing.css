@@ -80,6 +80,7 @@ body {
     color: var(--text-color);
 }
 
+/* .btnn { */
 .main p {
     margin: 10px 0;
 
@@ -109,6 +110,8 @@ body {
     margin-top: 32px;
 }
 
+/* .content { */
+
 
 
 
@@ -129,6 +132,7 @@ body {
     width: 100%;
 }
 
+/* .card { */
 
 
 .card {

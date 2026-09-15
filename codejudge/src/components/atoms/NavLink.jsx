@@ -5,4 +5,4 @@ const NavLink=({children})=>
         <a href="#" >{children}</a>
     );
 };
-export default NavLink; 
+export default NavLink;
